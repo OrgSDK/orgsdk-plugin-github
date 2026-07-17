@@ -1,0 +1,32 @@
+{
+	"$schema": "https://orgsdk.ai/schemas/plugin-manifest.v1.json",
+	"name": "github",
+	"version": "1.0.2",
+	"description": "GitHub repository operations: issues, PRs, branches, Actions, releases",
+	"entry": "index.ts",
+	"auth": {
+		"type": "token",
+		"provider": "github",
+		"label": "GitHub personal access token",
+		"hint": "Create a classic token at github.com/settings/tokens — grant the repo scope (add workflow if you touch Actions)."
+	},
+	"marketplace": {
+		"displayName": "GitHub",
+		"category": "Developer",
+		"tagline": "Put your repositories in the hands of a persistent agent team — triage issues, review and merge PRs, react to failed CI, and cut releases on a schedule.",
+		"tags": ["devops", "git"],
+		"useCases": [
+			"Auto-triage and label incoming issues, then draft responses for review",
+			"Review pull requests: pull the diff, summarize the risk, and request reviewers",
+			"React to failed CI runs — pull job logs and re-run only the failed jobs",
+			"Draft releases with a generated changelog from merged PRs",
+			"Keep a branch current and open a pull request from a generated change"
+		],
+		"permissionsSummary": "Read and write GitHub issues, pull requests, branches, files, Actions, and releases. Reads are non-mutating; writes and merges are mutating.",
+		"links": {
+			"homepage": "https://github.com",
+			"docs": "https://docs.github.com/en/rest",
+			"sourceRepo": "https://github.com/OrgSDK/orgsdk-plugin-github"
+		}
+	}
+}

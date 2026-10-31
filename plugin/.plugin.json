@@ -1,7 +1,7 @@
 {
 	"$schema": "https://orgsdk.ai/schemas/plugin-manifest.v1.json",
 	"name": "github",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "GitHub repository operations: issues, PRs, branches, Actions, releases",
 	"entry": "index.ts",
 	"auth": {
